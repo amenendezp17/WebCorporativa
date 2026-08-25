@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1d2a4f;
+  /* --muted y --accent son unos puntos más oscuros que el gris/azul "de catálogo"
+     a propósito: sobre --surface (#e0e4e8) el azul de marca exacto (#0077b6) da
+     3.8:1 y el gris que se usaba antes daba 4.23:1 — ambos por debajo de AA (4.5:1).
+     Este tono sigue leyéndose como el mismo azul de marca pero cumple en todas
+     las superficies del sitio (comprobado con axe-core, ver tests/a11y.spec.ts). */
+  --muted: #4f5c70;
+  --accent: #00628f;
+  --accent-2: #ff9f1c;
+  --accent-foreground: #ffffff;
+  --surface: #e0e4e8;
+  --border: #c9d0d6;
+
+  /* Colores de marca fijos (idénticos en ambos temas) — para piezas de identidad
+     como el icono o la banda CTA, donde el color exacto de marca no debe adaptarse. */
+  --brand-navy: #1d2a4f;
+  --brand-blue: #0077b6;
+  --brand-orange: #ff9f1c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1220;
+    --foreground: #eef2f6;
+    --muted: #9aa7b8;
+    --accent: #38b6ff;
+    --accent-2: #ff9f1c;
+    --accent-foreground: #0b1220;
+    --surface: #121a2b;
+    --border: #24304a;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, var(--border) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+  }
+
+  .glow-blob {
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+    filter: blur(60px);
+    opacity: 0.3;
+  }
+
+  .card-hover {
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 16px 40px -20px var(--accent);
+  }
+}

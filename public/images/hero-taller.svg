@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Ilustración de un portátil abierto sobre una mesa de taller con herramientas de reparación informática</title>
+  <rect width="640" height="480" rx="24" fill="#0a0e12"/>
+  <rect x="40" y="360" width="560" height="16" rx="8" fill="#1c2530"/>
+  <g>
+    <rect x="150" y="180" width="340" height="190" rx="10" fill="#121820" stroke="#22d3ee" stroke-width="2"/>
+    <rect x="170" y="200" width="300" height="150" rx="4" fill="#0a0e12"/>
+    <rect x="190" y="220" width="120" height="10" rx="5" fill="#22d3ee"/>
+    <rect x="190" y="240" width="180" height="6" rx="3" fill="#2a3844"/>
+    <rect x="190" y="256" width="150" height="6" rx="3" fill="#2a3844"/>
+    <rect x="190" y="272" width="200" height="6" rx="3" fill="#2a3844"/>
+    <circle cx="330" cy="320" r="18" fill="none" stroke="#22d3ee" stroke-width="3"/>
+    <path d="M330 308v6M330 326v6M318 320h6M336 320h6" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+    <rect x="130" y="368" width="380" height="14" rx="7" fill="#1c2530"/>
+  </g>
+  <g stroke="#0e7490" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <path d="M90 120 L90 150 L130 150"/>
+    <path d="M550 110 L550 150 L500 150"/>
+  </g>
+  <g fill="#22d3ee">
+    <circle cx="90" cy="110" r="6"/>
+    <circle cx="550" cy="100" r="6"/>
+  </g>
+  <g stroke="#22d3ee" stroke-width="3" fill="none" opacity="0.6">
+    <path d="M60 260 h30 M60 260 v20 M60 280 h20"/>
+    <path d="M580 220 h-30 M580 220 v20 M580 240 h-20"/>
+  </g>
+  <g transform="translate(430,140) rotate(20)">
+    <rect x="0" y="0" width="60" height="14" rx="4" fill="#e2e8f0"/>
+    <rect x="0" y="0" width="16" height="14" rx="4" fill="#94a3b8"/>
+  </g>
+</svg>
