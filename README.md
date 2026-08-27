@@ -1,8 +1,7 @@
 # ByteFix Soluciones Informáticas
 
 Web corporativa para un negocio local ficticio (reparación y soporte técnico informático),
-construida como plantilla vendible a clientes reales. Ver especificación completa en
-[spec-proyecto-web-corporativa.md](./spec-proyecto-web-corporativa.md).
+construida como plantilla vendible a clientes reales. 
 
 ## Stack
 
